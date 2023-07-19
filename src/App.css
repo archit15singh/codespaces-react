@@ -1,31 +1,84 @@
-.App {
-  text-align: center;
+.navigation__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #21222A;
+  height: 20vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation__heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 16rem;
+  height: 2rem;
+  color: #DEEBF8;
+  font-family: Inter;
+  font-weight: 600;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo__image {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+
+.main {
+  height: 80vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  background-color: #282D35;
+}
+
+.logo__heading {
+  color: #61DAFB;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.07rem;
+}
+
+.logo__body {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.body__heading {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.15rem;
+  margin-left: 5vw;
+  margin-top: 7vh;
 }
 
-.heart {
-  color: #ff0000;
+.body__list {
+  color: #FFF;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5vw;
 }
 
-.small {
-  font-size: 0.75rem;
+.body__list > li::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
+}
+
+.body__list > li {
+  margin: 1rem;
+}
+
+.body__container {
+  display:flex;
+  justify-content: space-between;
 }

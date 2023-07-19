@@ -1,0 +1,52 @@
+/* debug.css */
+
+/* Add a border around all elements for better visibility */
+* {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Highlight content area with a light yellow background */
+*::before,
+*::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.2);
+  z-index: -1;
+}
+
+/* Highlight padding area with a light green background */
+* {
+  background-clip: padding-box;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+/* Highlight border area with a light blue background */
+* {
+  background-clip: border-box;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+/* Highlight margin area with a light purple background */
+* {
+  background-clip: content-box, padding-box, border-box;
+  background-color: rgba(128, 0, 128, 0.2);
+}
+
+/* Add a line for the outside margin */
+body::after {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border-left: 1px dashed rgba(128, 0, 128, 0.5);
+  pointer-events: none;
+  z-index: 9999;
+}
