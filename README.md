@@ -1,4 +1,5 @@
 # GitHub Codespaces ♥️ React
+This is as part of the solution for Challenge #1 in [Challenge](https://www.youtube.com/watch?v=bMknfKXIFA8&t=8562s&ab_channel=freeCodeCamp.org)
 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
 
